@@ -1,0 +1,9 @@
+# compiled output
+bin
+obj
+
+# IDEs and editos
+.vs/
+
+# System Files
+.DS_Store
