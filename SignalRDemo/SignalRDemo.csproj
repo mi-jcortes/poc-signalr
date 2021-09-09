@@ -6,8 +6,18 @@
 
   <ItemGroup>
     <None Remove="Hubs\" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Controllers\" />
+    <None Remove="Models\" />
+    <None Remove="WebPush" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hubs\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="WebPush" Version="1.0.12" />
   </ItemGroup>
 </Project>

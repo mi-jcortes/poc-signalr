@@ -25,7 +25,7 @@ namespace SignalRDemo
         {
             services.AddCors(options => {
                 options.AddPolicy("AngularPolicy",
-                    builder => builder.WithOrigins("http://localhost:4200")
+                    builder => builder.WithOrigins("http://127.0.0.1:8080")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials()
@@ -58,7 +58,8 @@ namespace SignalRDemo
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                endpoints.MapHub<NotificationHub>("/notificationhub");  
+                endpoints.MapControllers();
+                endpoints.MapHub<NotificationHub>("/notificationhub");
             });
         }
     }
